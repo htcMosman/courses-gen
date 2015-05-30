@@ -1,0 +1,25 @@
+<p>
+    <a href="https://github.com/htcMosman" target="_blank" class="btn btn-primary"><i class="fa fa-github fa-lg"></i> View on GitHub →</a>
+</p>
+
+{% include author.html %}
+
+<h3 style="clear:both;">Archive</h3>
+<p>
+    <div class="page-archive">
+    {% for post in site.posts %}
+      {% assign post_month_year = post.date | date: "%B %Y" %}
+      {% assign newer_post_month_year = post.next.date | date: "%B %Y" %}
+      {% if post_month_year != newer_post_month_year %}
+        <h4 class="section-header-archive">
+          {{ post_month_year }}
+        </h4>
+      {% endif %}
+      <p>
+        <a href="{{ post.url | prepend:site.baseurl}}" class="post-title-archive">{{ post.title }}</a>
+        <small class="text-muted">{{ post.date | date_to_string }}</small>
+      </p>
+    {% endfor %}
+    </div>
+
+</p>

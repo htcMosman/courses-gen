@@ -1,0 +1,46 @@
+baseurl: "/courses-gen" # The subpath of your site. Use "" if you're hosting a blog at the root level.
+url: "http://htcmosman.github.io" # the base hostname & protocol for your site
+title: "General Course Material"
+
+# This is used by feed.xml. Uncomment if you want to use it.
+# description: "..."
+
+gems:
+  - jemoji
+  
+exclude:
+  - "README.md"
+  - "CHANGELOG.md"
+  - "CNAME"
+  - "Gemfile"
+  - "Gemfile.lock"
+  
+permalink: :title
+
+collections:
+  documents:
+    output: true
+
+    
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "documents"
+    values:
+      layout: "page"
+      hide_sidebar: true
+      
+      

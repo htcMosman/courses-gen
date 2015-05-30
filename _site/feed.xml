@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>General Course Material</title>
+    <description></description>
+    <link>http://htcmosman.github.io/courses-gen/</link>
+    <atom:link href="http://htcmosman.github.io/courses-gen/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Fri, 29 May 2015 19:31:10 -0500</pubDate>
+    <lastBuildDate>Fri, 29 May 2015 19:31:10 -0500</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>First Docs</title>
+        <description>&lt;p&gt;This semester will be the first that I’ll be using and teaching git in my courses, so the first few documents that I’ve added to the site are focused on the setup and use of git.  While there are already a lot of resources available, many of my students are just getting started with programming and some are beginning computer users.  Because of that, these docs aim to make very few assumptions on what someone may already know.&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 28 May 2015 00:00:00 -0500</pubDate>
+        <link>http://htcmosman.github.io/courses-gen/first-docs</link>
+        <guid isPermaLink="true">http://htcmosman.github.io/courses-gen/first-docs</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
