@@ -16,7 +16,7 @@ If you do not already have an account on [GitHub](https://github.com/), go creat
 
 If an employer searches for you by name, you want this account to show up. You can search for a user on GitHub by using `fullname:` in the search box. For example:
 <img src="{{ "/assets/intro-to-git-user-search.png" | prepend:site.baseurl }}">
-You can use just a first or last name to search, but you would still use `fullname:` before the name. 
+You can use just a first or last name to search, but you would still use `fullname:` before the name.
 
 ## Installing Git
 In the classroom, git will be installed for you, but you will  also want to have this installed on the computer you will be working on at home.  Git is fairly easy to install;  follow the instructions below for your operating system.
@@ -68,7 +68,7 @@ This page shows the files currently in the repository, along with the comments f
 When the fork (or copy) of the repository is complete, you'll be looking at the forked repository under your own GitHub account. A forked repository has a *fork* icon instead of a *book* icon.  You'll also notice that it has a note indicating where it originated from.
 <img src="{{"/assets/intro-to-git-repo-fork.png" | prepend:site.baseurl}}" alt="Image showing the book icon vs the fork icon.">
 
-Now you have a private copy of the repository where you can work on changes until they are ready to share back to the original project.  This allows you to commit changes that may not be complete yet, but are in a state where you don't want to lose them.  It is important to commit changes to your fork regularly.  I'm not sympathetic to hearing that you can't turn in your work because you've lost your portable drive, your home computer was ruined by your morning coffee, etc. 
+Now you have a private copy of the repository where you can work on changes until they are ready to share back to the original project.  This allows you to commit changes that may not be complete yet, but are in a state where you don't want to lose them.  It is important to commit changes to your fork regularly.  I'm not sympathetic to hearing that you can't turn in your work because you've lost your portable drive, your home computer was ruined by your morning coffee, etc.
 
 
 ### Clone a repository
@@ -77,15 +77,15 @@ Before you can make changes to the code, you need to get a copy of the files loc
 
 Open your command shell (Git Shell on Windows, Terminal on Mac, etc.) and go to the location where you want to work with these files.  If you have a location set up on a portable drive go there, otherwise pick a spot easy to get to like C:\Projects on Windows, or make a folder in your user directory on a Mac.
 
-Enter the following command, replacing <repo-url> with the HTTPS clone url that you copied. 
+Enter the following command, replacing <repo-url> with the HTTPS clone url that you copied.
 {% highlight bash %}
-$ git clone <repo-url> 
+$ git clone <repo-url>
 {% endhighlight %}
 
 If you list your directories, you'll now see that a students directory has been created for you.  Go into that directory.  If you've put this onto a portable drive, apply the local configuration discussed above.
 
 ### Make changes
-Now that you have your local repository, you are ready to make changes.  To add yourself to the course directory, add a new `USERNAME.yml` file under the appropriate `_data/TERM_YEAR/` directory.  See the example file `htcmosman.yml`, and replace the values with your own name, emoji (see this list), and introduction.
+Now that you have your local repository, you are ready to make changes.  To add yourself to the course directory, add a new `USERNAME.yml` file under the appropriate `_data/TERM_YEAR/` directory.  See the example file `htcmosman.yml`, and replace the values with your own name, [emoji](http://www.emoji-cheat-sheet.com/), and introduction.
 
 When you've got your file ready to go, switch back to your command shell. Use the following command to see what has changed.
 {% highlight bash %}
@@ -93,7 +93,7 @@ $ git status
 {% endhighlight %}
 This should show you that you have a file that is "untracked".  
 
-To add this file to your repository so that changes will be tracked on commit, enter: 
+To add this file to your repository so that changes will be tracked on commit, enter:
 {% highlight bash %}
 $ git add <full-path-and-file-name>
 {% endhighlight %}
@@ -113,7 +113,7 @@ $ git commit -m "A message describing the changes."
 
 It is a good idea to do a commit for every task. This allows you to have a good commit message, and a way to roll-back or undo any one thing.  If you do a bunch of tasks as one commit, it is much harder to identify the changes for any one specific task.
 
-To push your changes, you need to specify the remote branch to push to. It will often be `master`, but in this case it is `gh-pages`. 
+To push your changes, you need to specify the remote branch to push to. It will often be `master`, but in this case it is `gh-pages`.
 <img src="{{"/assets/intro-to-git-remote-branch.png" | prepend:site.baseurl}}" alt="Image showing the book icon vs the fork icon.">
 
 When you are ready to push your changes (at the end of class or a work session) run the following command:
