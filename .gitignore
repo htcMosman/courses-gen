@@ -1,7 +1,9 @@
-.DS_store
-_site
-.sass-cache
+.DS_store*
 *~
+._*
+.sass-cache
 *#*#*
 *Thumbs.db*
-_site*
+ehthumbs.db
+.Spotlight-V100
+.Trashes
