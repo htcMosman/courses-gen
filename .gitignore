@@ -1,7 +1,8 @@
-.DS_store*
+.DS_store
+_site
+.sass-cache
 *~
 ._*
-.sass-cache
 *#*#*
 *Thumbs.db*
 ehthumbs.db
